@@ -1,113 +1,58 @@
 # Stellar Bootcamp
 
+## Workshop 1: Blockchain, Stellar e Soroban
 
-WORKSHOP 1 - Blockchain, Stellar and Soroban
+**Aula 1.1: Fundamentos do Blockchain**
 
- 
-Blockchain basics
+- Tópicos: Conceitos básicos de blockchain, quem pode participar da rede, consenso federado, diferenciais da Stellar e Soroban.
+- Ferramentas: Apresentação, vídeos.
+- Projeto: Discussão sobre as características únicas da Stellar.
 
-Consensus
+**Aula 1.2: Pilha Tecnológica da Stellar e Introdução à Soroban**
 
-Who can join the network?
+- Tópicos: Exploração da pilha tecnológica Stellar, ativos e desenvolvimento de aplicativos, sobre Soroban, implantação faseada.
+- Ferramentas: Documentação da Stellar e Soroban.
+- Projeto: Visão geral dos recursos e primeiros passos com Soroban.
 
-What makes Stellar, and Soroban different
+## Workshop 2: Introdução ao Rust e Desenvolvimento com Soroban
 
-Federated Voting
+**Aula 2.1: Explorando o Rust**
 
-Stellar Stack
+- Tópicos: Introdução ao Rust, variáveis e constantes, tipos de dados, tipos escalares inteiro em Rust, valores literais de inteiros, booleanos, tuplas e arrays.
+- Ferramentas: Compilador Rust, ambiente de desenvolvimento.
+- Projeto: Execução de exemplos básicos de código em Rust.
 
-Assets and building apps
+**Aula 2.2: Funções e Estruturas em Rust**
 
-About Soroban
+- Tópicos: Funções e incremento, a quarta função - vetor, tipos suportados (mapa, símbolos, strings, ponto de tempo, duração, bytes), declaração de seus próprios tipos, Okashi como playground.
+- Ferramentas: Ambiente de desenvolvimento Rust.
+- Projeto: Desenvolvimento e teste de pequenas funções e estruturas em Rust.
 
-Phased Rollout
+## Workshop 3: SDK JavaScript e Implementação na Blockchain
 
-Resources
+**Aula 3.1: Desenvolvimento de Contrato Inteligente com Soroban**
 
- 
-WORKSHOP 2 - Introduction to Rust and Soroban development
+- Tópicos: NodeJS, contratos inteligentes Soroban, desenvolvimento de um sistema de chave-valor, teste e implantação de contrato inteligente em FutureNet.
+- Ferramentas: SDK JavaScript para Stellar, NodeJS.
+- Projeto: Criação e teste de um "Hello World Contract" e um sistema de chave-valor.
 
- 
-Exploring the canvas
+**Aula 3.2: Desenvolvimento Frontend e Deploy**
 
-About Rust
+- Tópicos: Desenvolvimento frontend, definição do componente principal de Dapp, testes com "npm run dev", aparência inicial no Local Host, variáveis de estado do contrato, funcionalidade Get Count, deploy em site estático usando Vercel.
+- Ferramentas: React, Vercel.
+- Projeto: Desenvolvimento e deploy de uma interface de usuário para interação com o contrato inteligente.
 
-Variables and Constants
 
-Data Types
+## Workshop 4: Tokenização de Ativos do Mundo Real
 
-Rust scalar integer types
+**Aula 4.1: Fundamentos da Tokenização**
 
-Rust integer literal values
+- Tópicos: O que é tokenização, quais ativos podem e devem ser tokenizados, por que tokenizar na Stellar, casos de uso reais por empresas.
+- Ferramentas: Apresentações, estudos de caso.
+- Projeto: Discussão sobre a tokenização e análise de casos de uso reais.
 
-Rust booleans, tuples and arrays
+**Aula 4.2: Construindo um Projeto de Tokenização**
 
-Functions and increment
-
-The fourth function - vector
-
-Supported types (map, symbols, strings, timepoint, duration, bytes)
-
-Declare your own types
-
-Okashi, a playground
-
- 
-WORSKHOP 3 - JavaScript SDK and chain Deploy
-
- 
-NodeJS
-
-About Soroban Smart Contract
-
-Hello World Contract 
-
-Creating Key Value System
-
-Contract Development
-
-Test for Smart Contract
-
-Deploy Contract on Future Net
-
-Frontend Development
-
-Defining Main Component of Dapp
-
-Test with "npm run dev"
-
-Initial appearance on Local Host
-
-Contract State Variables
-
-Frontend Appearance
-
-Get Count Functionality 
-
-Deploy to Static Site using Vercel 
-
-Soroban Dapp Challenge
-
- 
-WORSKHOP 4 - Tokenize Real-World Assets
-
- 
-What is tokenization?
-
-What assets can and should be tokenized?
-
-Why tokenize on Stellar?
-
-Real world use-cases by companies
-
-Stellar Asset Sandbox
-
-How a tokenization smart contract looks like
-
-Building a real tokenization project 
-
-Opportunities within Stellar and Soroban
-
-Stellar Subquery
-
-Q&A
+- Tópicos: Como um contrato inteligente de tokenização parece, construindo um projeto real de tokenização, oportunidades dentro de Stellar e Soroban, Stellar Subquery.
+- Ferramentas: Soroban, ferramentas de desenvolvimento Stellar.
+- Projeto: Desenvolvimento de um contrato inteligente para tokenização de um ativo escolhido, implementação e teste no ambiente Stellar.

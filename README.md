@@ -8,7 +8,7 @@
 - Ferramentas: Apresentação, vídeos.
 - Projeto: Discussão sobre as características únicas da Stellar.
 
-**Aula 1.2: Pilha Tecnológica da Stellar e Introdução à Soroban**
+**Aula 1.2: Teck-Stack (Pilha Tecnológica) da Stellar e Introdução à Soroban**
 
 - Tópicos: Exploração da pilha tecnológica Stellar, ativos e desenvolvimento de aplicativos, sobre Soroban, implantação faseada.
 - Ferramentas: Documentação da Stellar e Soroban.

@@ -11,7 +11,7 @@
 ## Aula 2
 
 - Fundamentos sobre Stellar. Tipos de tx, redes
-- Subindo um fullnode local
+- Subindo um fullnode Stellar local
 - RPC teste fullnode.
 
 ## Aula 3

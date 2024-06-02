@@ -10,9 +10,9 @@
 
 ## Aula 2
 
-- Fundamentos sobre Stellar. Tipos de tx, redes
-- Subindo um fullnode Stellar local
-- RPC teste fullnode.
+- Fundamentos sobre Stellar.
+- Configurando fullnode e DevOps
+- Interagindo com o fullnode usando SDK.
 
 ## Aula 3
 

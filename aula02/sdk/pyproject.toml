@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "stellar-bootcamp"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Oliveira <olivmath@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+stellar-sdk = "^10.0.0"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

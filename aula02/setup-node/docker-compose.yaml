@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  stellar:
+    image: stellar/quickstart:testing
+    ports:
+      - "8000:8000"
+      - "6061:6061"
+    command: [
+      "--standalone",
+      "--enable-soroban-rpc",
+      "--enable-soroban-rpc-admin-endpoint"
+    ]
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - stellar
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus

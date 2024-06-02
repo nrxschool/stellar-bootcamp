@@ -39,7 +39,7 @@ docker run \
 - Emissor e Distribuidor
 - Criando o Token
 - Destribuindo o Token
-
+<!-- 
 # 6. Criando um Pool de Liquidez
 
 - Tipos de transações
@@ -48,4 +48,4 @@ docker run \
 
 - Colocando uma ordem de venda
 - Colocando uma ordem de compra
-- Validando saldos nas carteiras
+- Validando saldos nas carteiras -->

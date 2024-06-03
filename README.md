@@ -16,16 +16,17 @@
 
 ## Aula 3
 
-- Ecosistema de sistema de desenvolvimento Stellar
-- Ciclo de vida de um smartcontract na Stellar
-- Básico de smartcontrat (Hello World)
+- Ecosistema de sistema de desenvolvimento Rust
+- Básico sobre Rust
+- Básico de smartcontrats Soroban (Hello World)
 
 ## Aula 4
 
-- Básico sobre Rust: variáveis, ifelse, for-loop, fn, struct, impl
-- smartcontracts (Flipper, Counter)
+- Flipando bits (Flipper)
+- Entendo sobre armazenamento (Counter)
+- Avançando em lógica (Task manager)
 
 ## Aula 5
 
-- Smartcontracts Tokenização
-- DeFi (Token e vendor machine)
+- Criando um Token com Soroban
+- Primeiro Dapp Stellar

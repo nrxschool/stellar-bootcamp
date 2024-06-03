@@ -16,11 +16,13 @@ def transfer_from(sender: Keypair, receiver, amount, server: Server):
         print(f"Failed to fetch base fee: {e}")
         fee = 100
 
+    sender = server.load_account(sender.public_key)
+
     print("✅ # Build transaction")
     transaction = (
         TransactionBuilder(
-            source_account=server.load_account(sender.public_key),
             network_passphrase=Network.STANDALONE_NETWORK_PASSPHRASE,
+            source_account=sender,
             base_fee=fee,
         )
         .add_text_memo(f"Pay {amount}XML to Bob")
@@ -35,7 +37,6 @@ def transfer_from(sender: Keypair, receiver, amount, server: Server):
     print("✅ # Submits the transaction to the Horizon server")
     response = server.submit_transaction(transaction)
     tx_hash = response["hash"]
-
     print(f"✅ # Transaction Hash: {tx_hash}")
 
     print("✅ # Final Sender's balances")

@@ -2,17 +2,24 @@ from stellar_sdk.exceptions import NotFoundError
 from requests import get, RequestException
 
 
-def create_account(public_key, server):
-    return True
+def soft_create_account(public_key):
+    url = "http://localhost:8000/friendbot"
+    params = {"addr": public_key}
+    timeout = 30
+    try:
+        r = get(url, params=params, timeout=timeout)
+        r.raise_for_status()
+    except RequestException as e:
+        raise ValueError(f"Error in get faucet: {str(e)}") from e
+
 
 def validate_wallet(public_key, server):
     try:
         server.load_account(public_key)
-    except NotFoundError as e:
+    except NotFoundError:
         print("The destination account does not exist!")
         print("Creating Account!")
-        create_account(public_key, server)
-    
+        soft_create_account(public_key)
 
 
 def validate_wallet_balance(public_key, server):
@@ -44,17 +51,9 @@ def get_faucet(public_key, server):
         print(f"Wallet: {public_key} already balance!")
         return
 
-
     print(f"Wallet: {public_key} need a deposit!")
 
-    url = "http://localhost:8000/friendbot"
-    params = {"addr": public_key}
-    timeout = 30
-    try:
-        r = get(url, params=params, timeout=timeout)
-        r.raise_for_status()
-    except RequestException as e:
-        raise ValueError(f"Error in get faucet: {str(e)}") from e
+    soft_create_account(public_key)
 
 
 def get_transaction_by_hash(server, transaction_hash):

@@ -28,5 +28,4 @@
 
 ## Aula 5
 
-- Criando um Token com Soroban
-- Primeiro Dapp Stellar
+- Noções avançadas de Soroban

@@ -96,7 +96,7 @@ cargo install --locked soroban-cli
 ## 3.2 Configurar o client (Soroban)
 
 ```
-soroban config network add standalone \
+soroban config network add local \
     --rpc-url "http://localhost:8000/soroban/rpc" \
     --network-passphrase "Standalone Network ; February 2017"
 ```
@@ -104,7 +104,7 @@ soroban config network add standalone \
 ## 3.3 Criando uma wallet com Soroban
 
 ```
-soroban keys generate --global bob --network standalone --no-fund
+soroban keys generate --global bob --network local
 ```
 
 ## 3.4 Criando projeto
@@ -134,8 +134,8 @@ cargo test
 ```bash
 soroban contract deploy \
   --wasm target/wasm32-unknown-unknown/release/hello_world.wasm \
-  --source alice \
-  --network standalone
+  --source bob \
+  --network local
 ```
 
 ## 3.7 Interagindo com o contrato
@@ -143,8 +143,8 @@ soroban contract deploy \
 ```bash
 soroban contract invoke \
   --id <contract_id> \
-  --source alice \
-  --network standalone \
+  --source bob \
+  --network local \
   -- \
   hello \
   --to Lucas

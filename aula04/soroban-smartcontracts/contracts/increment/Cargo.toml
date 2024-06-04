@@ -1,7 +1,6 @@
-dev_dependencies = { soroban-sdk = { workspace = true } }
 [package]
-name = "soroban-increment-contract"
-version = "0.0.0"
+name = "increment"
+version = "0.1.0"
 edition = "2021"
 publish = false
 

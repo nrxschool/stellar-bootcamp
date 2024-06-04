@@ -9,7 +9,7 @@ pub struct IncrementContract;
 #[contractimpl]
 impl IncrementContract {
     /// Increment increments an internal counter, and returns the value.
-    pub fn increment(env: Env) -> u32 {
+    pub fn increment(env: Env) {
         // Get the current count.
         let mut count: u32 = env.storage().instance().get(&COUNTER).unwrap_or(0); // If no value set, assume 0.
         log!(&env, "count: {}", count);
@@ -25,9 +25,10 @@ impl IncrementContract {
         // the lifetime is extended to 100 ledgers. This lifetime bump includes the contract
         // instance itself and all entries in storage().instance(), i.e, COUNTER.
         env.storage().instance().extend_ttl(50, 100);
+    }
 
-        // Return the count to the caller.
-        count
+    pub fn get_counter(env: Env) -> u32 {
+        env.storage().instance().get(&COUNTER).unwrap_or(0)
     }
 }
 

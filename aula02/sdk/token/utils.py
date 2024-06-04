@@ -97,3 +97,18 @@ def create_account(funder_wallet, new_account_public_key, starting_balance, serv
         raise Exception("Transaction was failed to be created")
 
     return response
+
+def get_transaction_by_hash(server, transaction_hash):
+    transaction = server.transactions().transaction(transaction_hash).call()
+    print("✅ # Transaction details:")
+    print(f"  - ID: {transaction['id']}")
+    print(f"  - Hash: {transaction['hash']}")
+    print(f"  - Ledger: {transaction['ledger']}")
+    print(f"  - Created At: {transaction['created_at']}")
+    print(f"  - Source Account: {transaction['source_account']}")
+    print(f"  - Memo: {transaction['memo']}")
+    print(f"  - Fee Charged: {transaction['fee_charged']}")
+    print(f"  - Operation Count: {transaction['operation_count']}")
+    print(f"  - Successful: {transaction['successful']}")
+
+    return transaction

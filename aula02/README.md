@@ -1,15 +1,15 @@
-# 1. Instalar ferramentas
-
-- Rust
-- Docker
-- Python
-
-# 2. Como funciona o Ecosistema Stellar?
+# 1. Como funciona o Ecosistema Stellar?
 
 - Nodes (Consenso)
 - SDK (Horizon)
 - Soroban (Smartcontacts)
 - Wallet ()
+
+# 2. Instalar ferramentas
+
+- Docker
+- Python
+
 
 # 3. Configurarr um node para desenvolvimento
 
@@ -21,7 +21,7 @@ docker run \
   -p 8000:8000 \
   --name stellar \
   stellar/quickstart:testing \
-  --standalone \
+  --local \
   --enable-soroban-rpc
 ```
 

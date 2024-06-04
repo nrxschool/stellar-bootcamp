@@ -16,17 +16,19 @@ def transfer_from(sender: Keypair, receiver, amount, server: Server):
         print(f"Failed to fetch base fee: {e}")
         fee = 100
 
-    sender = server.load_account(sender.public_key)
+    sender_account = server.load_account(sender.public_key)
 
     print("✅ # Build transaction")
     transaction = (
         TransactionBuilder(
             network_passphrase=Network.STANDALONE_NETWORK_PASSPHRASE,
-            source_account=sender,
+            source_account=sender_account,
             base_fee=fee,
         )
-        .add_text_memo(f"Pay {amount}XML to Bob")
-        .append_payment_op(receiver, Asset.native(), str(amount))
+        .add_text_memo("Happy birthday!")
+        .append_payment_op(
+            destination=receiver, asset=Asset.native(), amount=str(amount)
+        )
         .set_timeout(30)
         .build()
     )

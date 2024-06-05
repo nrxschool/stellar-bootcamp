@@ -22,7 +22,6 @@ get_faucet(bob.public_key, server)
 
 
 # fazer transferencia
-
 tx_hash = transfer_from(alice, bob.public_key, 1000, server)
 
 

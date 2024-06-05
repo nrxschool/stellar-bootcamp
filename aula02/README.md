@@ -1,9 +1,23 @@
+# 0. Blockchain paths
+
+- core blockchain engineer -> node
+  * redes, criptografia, protocolo de consenso, DevOps
+
+- SDK engineer -> SDK
+  * python, javascript, rust, ruby, golang
+
+- smartcontract engineer -> smartcontract
+  * EVM: solidity, vyper | no-EVM: Rust, Golang
+
+- integration web3 engine -> application
+  * lib (SDK): web3js, etherjs, viem  | cardano SDK 
+
 # 1. Como funciona o Ecosistema Stellar?
 
 - Nodes (Consenso)
 - SDK (Horizon)
 - Soroban (Smartcontacts)
-- Wallet ()
+- Wallet (Freighter)
 
 # 2. Instalar ferramentas
 

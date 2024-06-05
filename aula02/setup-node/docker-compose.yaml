@@ -7,7 +7,7 @@ services:
       - "8000:8000"
       - "6061:6061"
     command: [
-      "--standalone",
+      "--local",
       "--enable-soroban-rpc",
       "--enable-soroban-rpc-admin-endpoint"
     ]

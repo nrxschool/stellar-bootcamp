@@ -29,7 +29,7 @@ def transfer_from(sender: Keypair, receiver, amount, server: Server):
         .append_payment_op(
             destination=receiver, asset=Asset.native(), amount=str(amount)
         )
-        .set_timeout(30)
+        .set_timeout(60)
         .build()
     )
 

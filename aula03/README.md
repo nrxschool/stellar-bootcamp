@@ -90,13 +90,14 @@ rustup target add wasm32-unknown-unknown
 ```
 
 ```bash
-cargo install --locked soroban-cli
+cargo install --locked soroban-cli --version 21.0.0-rc.1
 ```
 
 ## 3.2 Configurar o client (Soroban)
 
-```
-soroban config network add local \
+```bash
+soroban network add local \
+    --global \
     --rpc-url "http://localhost:8000/soroban/rpc" \
     --network-passphrase "Standalone Network ; February 2017"
 ```

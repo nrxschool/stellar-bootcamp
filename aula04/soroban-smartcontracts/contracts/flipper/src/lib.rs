@@ -3,11 +3,19 @@ use soroban_sdk::{contract, contractimpl, symbol_short, Env, Symbol};
 
 const STATE: Symbol = symbol_short!("STATE");
 
+
+// enum Result {
+//     OK(bool),
+//     Error(Symbol),
+// }
+
+
 #[contract]
 pub struct Flipper;
 
 #[contractimpl]
 impl Flipper {
+
     pub fn flip(env: Env) {
         let mut state: bool = env.storage().instance().get(&STATE).unwrap_or(false);
 
